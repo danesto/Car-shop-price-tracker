@@ -41,7 +41,7 @@ def send_mail():
     to_mail=input('Unesite Vas mail: ')
 
     subject='Cena je pala'
-    body='Proverite link https://www.polovniautomobili.com/auto-oglasi/14198470/ford-fiesta-10-ecoboost'
+    body=f'Proverite link {URL}'
     msg=f'Subject {subject}\n\n{body}'
 
     server.sendmail(
