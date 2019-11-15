@@ -7,6 +7,7 @@ import time
 
 URL=input('Unesite link kola sa poloviniautobili.com: ')
 headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'}
+to_mail=input('Unesite Vas mail: ')
 
 def check_price():
     page=requests.get(URL, headers=headers)
@@ -38,7 +39,7 @@ def send_mail():
     server.ehlo()
 
     server.login('dane.sto@gmail.com','fkpblyybpcnmuqin')
-    to_mail=input('Unesite Vas mail: ')
+    to_mail
 
     subject='Cena je pala'
     body=f'Proverite link {URL}'
